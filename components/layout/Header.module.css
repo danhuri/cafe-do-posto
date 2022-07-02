@@ -1,0 +1,80 @@
+.desktop-nav-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    height: 5rem;
+    background-color: #ffffff;
+    padding: 0 10%;
+    /* border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #eaeaea; */
+    position: sticky;
+    top: 0;
+    padding: 0 5%;
+    z-index: 99999;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    /* color: #3a404a; */
+    font-weight: 300;
+    font-family: Anurati, seriff;
+    letter-spacing: 0.02em;
+  }
+  
+  .logo a {
+    background-image: rgb(131, 58, 180);
+    background-image: linear-gradient(
+      to right,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 25%,
+      rgba(252, 238, 69, 1) 50%,
+      rgba(58, 64, 74, 1) 75%,
+      rgba(58, 64, 74, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-size: 1000% 100%;
+    background-position: 80%;
+    transition: background-position 500ms ease;
+  }
+  
+  .logo a:hover,
+  .logo a:active,
+  .logo a.active {
+    background-position: 0 100%;
+  }
+  
+  .desktop-nav-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .desktop-nav-wrapper li {
+    margin-left: 3rem;
+  }
+  
+  .desktop-nav-wrapper li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #3a404a;
+  }
+  
+  .desktop-nav-wrapper a:hover,
+  .desktop-nav-wrapper a:active,
+  .desktop-nav-wrapper a.active {
+    color: #aa00cc;
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 650px) {
+    .desktop-nav-wrapper {
+        display: none;
+    }
+  }
